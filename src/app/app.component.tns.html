@@ -1,3 +1,20 @@
-<GridLayout>
-  <page-router-outlet></page-router-outlet>
-</GridLayout>
+<BottomNavigation selectedIndex="0">
+  <TabStrip>
+    <TabStripItem class="navigation__item">
+      <label text="Home"></label>
+      <image src="font://&#xf015;" class="fas t-36"></image>
+    </TabStripItem>
+    <TabStripItem class="navigation__item">
+      <label text="Players"></label>
+      <image src="font://&#xf1ea;" class="far t-36"></image>
+    </TabStripItem>
+  </TabStrip>
+
+  <TabContentItem>
+    <page-router-outlet name="homeTab"></page-router-outlet>
+  </TabContentItem>
+
+  <TabContentItem>
+    <page-router-outlet name="playersTab"></page-router-outlet>
+  </TabContentItem>
+</BottomNavigation>

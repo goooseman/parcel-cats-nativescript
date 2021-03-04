@@ -6,6 +6,9 @@ import { AppComponent } from '@src/app/app.component';
 import { HomeComponent } from '@src/app/home/home.component';
 
 import { BarcelonaModule } from '@src/app/barcelona/barcelona.module';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,9 @@ import { BarcelonaModule } from '@src/app/barcelona/barcelona.module';
     BrowserModule,
     AppRoutingModule,
     BarcelonaModule,
+    MatToolbarModule,
+    MatButtonModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
