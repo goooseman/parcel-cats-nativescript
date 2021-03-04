@@ -3,7 +3,8 @@
   "version": 1,
   "newProjectRoot": "projects",
   "cli": {
-    "defaultCollection": "@nativescript/schematics"
+    "defaultCollection": "@nativescript/schematics",
+    "analytics": "c29c0709-1d25-417b-8469-4ad5ea7a6674"
   },
   "projects": {
     "parcel-cats": {
