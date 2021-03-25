@@ -1,29 +1,25 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from '@src/app/app-routing.module';
-import { AppComponent } from '@src/app/app.component';
-import { HomeComponent } from '@src/app/home/home.component';
-
-import { BarcelonaModule } from '@src/app/barcelona/barcelona.module';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatButtonModule} from '@angular/material/button';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { AppRoutingModule } from "@src/app/app-routing.module";
+import { AppComponent } from "@src/app/app.component";
+import { AddTrackingModule } from "@src/app/add-tracking/add-tracking.module";
+import { TrackingsModule } from "@src/app/trackings/trackings.module";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatButtonModule } from "@angular/material/button";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BarcelonaModule,
+    TrackingsModule,
+    AddTrackingModule,
     MatToolbarModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

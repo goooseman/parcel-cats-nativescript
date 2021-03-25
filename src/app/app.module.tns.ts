@@ -3,9 +3,8 @@ import { NativeScriptModule, NativeScriptCommonModule } from '@nativescript/angu
 
 import { AppRoutingModule } from '@src/app/app-routing.module';
 import { AppComponent } from '@src/app/app.component';
-import { HomeComponent } from '@src/app/home/home.component';
-
-import { BarcelonaModule } from '@src/app/barcelona/barcelona.module';
+import { AddTrackingModule } from '@src/app/add-tracking/add-tracking.module';
+import { TrackingsModule } from '@src/app/trackings/trackings.module';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding and/or HTTP wrapper
 // import { NativeScriptFormsModule, NativeScriptHttpClientModule } from '@nativescript/angular';
@@ -13,12 +12,12 @@ import { BarcelonaModule } from '@src/app/barcelona/barcelona.module';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
   ],
   imports: [
     NativeScriptModule,
     AppRoutingModule,
-    BarcelonaModule,
+    TrackingsModule,
+    AddTrackingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
