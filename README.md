@@ -1,5 +1,9 @@
 # parcel-cats
 
+<p align="center">
+  <img src="./assets/logo.png" alt="ParcelCats" />
+</p>
+
 ### Useful commands
 
 - `tns resources generate icons assets/logo.png` generates icons
