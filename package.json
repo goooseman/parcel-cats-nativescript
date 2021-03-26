@@ -2,6 +2,12 @@
   "name": "parcel-cats",
   "main": "main.tns.js",
   "version": "0.0.0",
+  "nativescript": {
+    "id": {
+      "ios": "com.parcelcats",
+      "android": "com.parcelcats"
+    }
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
